@@ -1,0 +1,36 @@
+<link rel="import" href="bower_components/polymer/polymer.html"></link>
+<link rel="import" href="github-repo.html"></link>
+
+<!--
+	TODO: Get the name of the account.
+	TODO: Load list of public repos under the account from GitHub.
+	TODO: For each repo, consume github-repo web component.
+-->
+
+<dom-module id="github-repos">
+    <!-- https://www.polymer-project.org/1.0/docs/devguide/styling.html#external-stylesheets -->
+	<link rel="import" type="css" href="github-repos-style.css">
+	<link rel="import" type="css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<template>
+		<div class="row">
+			<div class="col-sm-6">
+				<hr />
+			</div>
+			<div class="col-sm-6">
+				<hr />
+			</div>
+		</div>
+		<div class="header">GitHub Repositories for <span class="account-name">{{accountname}}</span></div>
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: "github-repos",
+		
+		// https://www.polymer-project.org/1.0/docs/devguide/properties.html
+		properties: {
+			accountname: String	
+		}
+	});
+</script>

@@ -1,0 +1,10 @@
+:host {
+}
+
+.header {
+	background-color: lightblue;
+	padding: 5px;
+	font-size: 17px;
+	color: #ffffff;
+	font-weight: bold;
+}

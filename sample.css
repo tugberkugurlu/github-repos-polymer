@@ -1,0 +1,11 @@
+header, footer {
+	background-color: gray;
+	padding: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+section[role=main] {
+	margin: 10px 0;
+}
